@@ -1,15 +1,15 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Index from "./pages/Index.jsx";
-import UserProfile from "./pages/UserProfile.jsx"; // Import the UserProfile component
+import UserProfile from "./pages/UserProfile.jsx";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Index />} />
-        <Route path="/profile" element={<UserProfile />} /> {/* Add route for UserProfile */}
+        <Route path="/profile" element={<UserProfile />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
