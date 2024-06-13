@@ -4,12 +4,12 @@ import UserProfile from "./pages/UserProfile.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route path="/profile" element={<UserProfile />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
